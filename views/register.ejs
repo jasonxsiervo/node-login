@@ -1,19 +1,69 @@
-<h1>Register</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="">
+</head>
+<body>
 
-<!-- POST method when handling inputs -->
-<form action="/register" method="POST">
-    <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+    <nav>
+        <ul class="nav-link">
+            <Link class="home" to="/">
+                <li>to do list</li>
+            </Link>
+        </ul>
+    </nav >
+
+    <!-- will show the error message if there is any from express-flash -->
+    <% if(messages.error) { %>
+        <%= messages.error %>
+    <% } %>
+
+    <div class="container">
+        <div class="register-container">
+            <p class="logo">🐧</p>
+
+            <form action="/register" method="POST" class="form-inner">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        class="input"
+                        placeholder="Name"
+                        id="name"
+                        name="name"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        class="input"
+                        placeholder="Email"
+                        id="email"
+                        name="email"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        class="input"
+                        placeholder="Password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+                </div>
+                <button title="Login" class="login-button" type="submit">Register</button>
+            </form>
+        </div>
     </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
-    </div>
-    <button type="submit">Submit</button>
-</form>
-<a href="/login">Login</a>
+
+</body>
+</html>

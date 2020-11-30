@@ -23,6 +23,8 @@ initializePassport(
 // Setting up the view engine for this app
 app.set('view-engine', 'ejs');
 
+app.use('/css', express.static(__dirname + '/css'));
+
 //gets information from forms using req method instead of res method
 app.use(express.urlencoded({ extended: false }));
 app.use(flash());

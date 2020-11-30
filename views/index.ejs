@@ -1,6 +1,38 @@
-<h1>Hello <%= name %></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <nav>
+        <ul class="nav-link">
+            <Link class="home" to="/">
+                <li>to do list</li>
+            </Link>
+        </ul>
+    </nav >
 
-<!-- will call the delete method and override the use of app.post -->
-<form action="/logout?_method=DELETE" method="POST">
-    <button type="submit">Logout</button>
-</form>
+    <div class="container">
+        <div class="login-container">
+            <p class="logo">🦅</p>
+
+            <h1>Hello, <%= name %>!</h1>
+
+            <!-- will call the delete method and override the use of app.post -->
+            <form class="logout-form" action="/logout?_method=DELETE" method="POST">
+                <button class="login-button" type="submit">Logout</button>
+            </form>
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+

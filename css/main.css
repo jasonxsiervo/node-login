@@ -1,0 +1,163 @@
+nav {
+    display: grid;
+    align-items: center;
+    min-height: 10vh;
+    color: #707070;
+    font-weight: 700;
+}
+
+.nav-link {
+    display: grid;
+    /* grid-template-columns: minmax(515px, 1fr) minmax(515px, 1fr); */
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    /* background-color: aqua; */
+    padding: 0;
+    margin-left: 160px;
+    margin-right: 160px;
+    font-size: 40px;
+    grid-gap: 20px;
+}
+
+.home {
+    display: grid;
+    justify-content: start;
+    color: #707070;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    grid-template-rows: 150px ;
+    background-color: white;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.register-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 550px;
+    grid-template-rows: 180px 1fr;
+    background-color: white;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.login-container-error {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    grid-template-rows: 180px 10px 1fr;
+    background-color: white;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.logo {
+    font-size: 80px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.error-message {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(224, 75, 75);
+    height: 36px;
+    margin-top: 27px;
+    color:white;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.form-inner {
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.form-group {
+    display: grid;
+    grid-template-rows: 30px 30px;
+    width: 250px;
+}
+
+.input {
+    border-radius: 25px;
+    border: 0;
+    padding: 13px; 
+    /* width: 100px; */
+    height: 9px;    
+    margin-bottom: 28px;
+    outline: none;
+    background-color: #c9c9c9;
+}
+
+.login-button {
+    font-size: 18px;
+    font-weight: 600;
+    justify-items: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    border: 0;
+    margin-top: 20px;
+    background-color: #FFD600;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+.register {
+    text-decoration: none;
+    color: black;
+}
+
+.logout-form {
+    display: grid;
+    place-items: center;
+}
